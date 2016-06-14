@@ -1,0 +1,2209 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>HandHeldProducts.Embedded.Decoding.DecodeAssembly</name>
+    </assembly>
+    <members>
+        <member name="T:HandHeldProducts.Embedded.Decoding.SymbologyConfigurator">
+            <summary>
+            The SymbologyConfigurator exposes the interface to configure the device engine for decoding specific symbologies.
+            </summary>
+        </member>
+        <member name="M:HandHeldProducts.Embedded.Decoding.SymbologyConfigurator.#ctor(HandHeldProducts.Embedded.Decoding.SymbologyConfigurator.Symbologies)">
+            <summary>
+            Default constructor
+            </summary>
+            <param name="Symbology">Symbology / Symbologies to set.</param>
+        </member>
+        <member name="M:HandHeldProducts.Embedded.Decoding.SymbologyConfigurator.Dispose">
+            <summary>
+            Releases all SymbologyConfigurator resources.
+            </summary>
+        </member>
+        <member name="M:HandHeldProducts.Embedded.Decoding.SymbologyConfigurator.Finalize">
+            <summary>
+            Finalizer
+            </summary>
+        </member>
+        <member name="M:HandHeldProducts.Embedded.Decoding.SymbologyConfigurator.Dispose(System.Boolean)">
+            <summary>
+            
+            </summary>
+            <param name="Disposing"></param>
+        </member>
+        <member name="M:HandHeldProducts.Embedded.Decoding.SymbologyConfigurator.GetMinMaxLengthLimits(System.Int32@,System.Int32@)">
+            <summary>
+            Get the Symbology's Min and Max Length
+            </summary>
+            <param name="Min">Returns the minimum length.</param>
+            <param name="Max">Returns the maximum length.</param>
+        </member>
+        <member name="M:HandHeldProducts.Embedded.Decoding.SymbologyConfigurator.ReadConfig(HandHeldProducts.Embedded.Decoding.DecodeAssembly.SetupTypes)">
+            <summary>
+            Reads the symbology's configuration.
+            </summary>
+            <param name="SetupType">Sets the specific setup to either default or current values.</param>
+        </member>
+        <member name="M:HandHeldProducts.Embedded.Decoding.SymbologyConfigurator.SetToDefaults">
+            <summary>
+            Sets the symbology's configuration to the default values.
+            </summary>
+        </member>
+        <member name="M:HandHeldProducts.Embedded.Decoding.SymbologyConfigurator.WriteConfig">
+            <summary>
+            Writes the symbology's configuration.
+            </summary>
+        </member>
+        <member name="P:HandHeldProducts.Embedded.Decoding.SymbologyConfigurator.Flags">
+            <summary>
+            Get/Set The Flags that Represent the Symbology Configuration Options.
+            </summary>
+        </member>
+        <member name="P:HandHeldProducts.Embedded.Decoding.SymbologyConfigurator.Mask">
+            <summary>
+            Get/Set The Mask That Identifies Whether Flags and / or Range Should be Read / Written.
+            </summary>
+        </member>
+        <member name="P:HandHeldProducts.Embedded.Decoding.SymbologyConfigurator.MaxLength">
+            <summary>
+            Get/Set The Maximum Symbology Length.
+            </summary>
+        </member>
+        <member name="P:HandHeldProducts.Embedded.Decoding.SymbologyConfigurator.MinLength">
+            <summary>
+            Get/Set The Minimum Symbology Length.
+            </summary>
+        </member>
+        <member name="P:HandHeldProducts.Embedded.Decoding.SymbologyConfigurator.Symbology">
+            <summary>
+            Returns The Symbology to Configure.
+            </summary>
+        </member>
+        <member name="P:HandHeldProducts.Embedded.Decoding.SymbologyConfigurator.SymbologyConfigurationType">
+            <summary>
+            Returns the Symbology Configuration Type.
+            </summary>
+        </member>
+        <member name="T:HandHeldProducts.Embedded.Decoding.SymbologyConfigurator.AimID">
+            <summary>
+            AIM Symbology Identifiers
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.SymbologyConfigurator.AimID.AusPost">
+            <summary>
+            AIM Identifier for Australian Postal Code
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.SymbologyConfigurator.AimID.Aztec">
+            <summary>
+            AIM Identifier for Aztec
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.SymbologyConfigurator.AimID.BPO">
+            <summary>
+            AIM Identifier for British Postal Code
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.SymbologyConfigurator.AimID.CanPost">
+            <summary>
+            AIM Identifier for Canadian Postal Code
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.SymbologyConfigurator.AimID.ChinaPost">
+            <summary>
+            AIM Identifier for China Postal Code
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.SymbologyConfigurator.AimID.CodaBar">
+            <summary>
+            AIM Identifier for CodaBar
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.SymbologyConfigurator.AimID.CodaBlock">
+            <summary>
+            AIM Identifier for CodaBlock
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.SymbologyConfigurator.AimID.Code11">
+            <summary>
+            AIM Identifier for Code11
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.SymbologyConfigurator.AimID.Code128">
+            <summary>
+            AIM Identifier for Code128
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.SymbologyConfigurator.AimID.Code16K">
+            <summary>
+            AIM Identifier for Code16K
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.SymbologyConfigurator.AimID.Code32">
+            <summary>
+            AIM Identifier for Code32
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.SymbologyConfigurator.AimID.Code39">
+            <summary>
+            AIM Identifier for Code39
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.SymbologyConfigurator.AimID.Code49">
+            <summary>
+            AIM Identifier for Code49
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.SymbologyConfigurator.AimID.Code93">
+            <summary>
+            AIM Identifier for
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.SymbologyConfigurator.AimID.Composite">
+            <summary>
+            AIM Identifier for Composite
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.SymbologyConfigurator.AimID.CouponCode">
+            <summary>
+            AIM Identifier for CouponCode
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.SymbologyConfigurator.AimID.DataMatrix">
+            <summary>
+            AIM Identifier for DataMatrix
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.SymbologyConfigurator.AimID.DutchPost">
+            <summary>
+            AIM Identifier for Dutch Postal Code
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.SymbologyConfigurator.AimID.GS1_128">
+            <summary>
+            AIM Identifier for GS1_128
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.SymbologyConfigurator.AimID.EAN">
+            <summary>
+            AIM Identifier for Ean
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.SymbologyConfigurator.AimID.GRIDMATRIX">
+            <summary>
+            AIM Identifier for GridMatrix
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.SymbologyConfigurator.AimID.HANXIN">
+            <summary>
+            AIM Identifier for HanXin
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.SymbologyConfigurator.AimID.IATA25">
+            <summary>
+            AIM Identifier for IATA25
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.SymbologyConfigurator.AimID.Int25">
+            <summary>
+            AIM Identifier for Interleaved 2/5
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.SymbologyConfigurator.AimID.ISBT">
+            <summary>
+            AIM Identifier for ISBT
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.SymbologyConfigurator.AimID.JaPost">
+            <summary>
+            AIM Identifier for Japan Postal
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.SymbologyConfigurator.AimID.KoreaPost">
+            <summary>
+            AIM Identifier for Korean Postal Code
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.SymbologyConfigurator.AimID.LabelCode">
+            <summary>
+            AIM Identifier for LabelCode
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.SymbologyConfigurator.AimID.Matrix25">
+            <summary>
+            AIM Identifier for Matrix 2/5
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.SymbologyConfigurator.AimID.MaxiCode">
+            <summary>
+            AIM Identifier for MaxiCode
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.SymbologyConfigurator.AimID.MicroPDF">
+            <summary>
+            AIM Identifier for MicroPDF
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.SymbologyConfigurator.AimID.MSI">
+            <summary>
+            AIM Identifier for MSI
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.SymbologyConfigurator.AimID.OCR">
+            <summary>
+            AIM Identifier for OCR
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.SymbologyConfigurator.AimID.PDF417">
+            <summary>
+            AIM Identifier for PDF417
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.SymbologyConfigurator.AimID.Planet">
+            <summary>
+            AIM Identifier for Planet Code
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.SymbologyConfigurator.AimID.Plessey">
+            <summary>
+            AIM Identifier for Plessey
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.SymbologyConfigurator.AimID.PosiCode">
+            <summary>
+            AIM Identifier for PosiCode
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.SymbologyConfigurator.AimID.PostNet">
+            <summary>
+            AIM Identifier for PostNet
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.SymbologyConfigurator.AimID.QR">
+            <summary>
+            AIM Identifier for QR Code
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.SymbologyConfigurator.AimID.RSS">
+            <summary>
+            AIM Identifier for Reduced Space Symbology
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.SymbologyConfigurator.AimID.Strt25">
+            <summary>
+            AIM Identifier for Straight 2/5
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.SymbologyConfigurator.AimID.TelePen">
+            <summary>
+            AIM Identifier for TelePen
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.SymbologyConfigurator.AimID.TLC39">
+            <summary>
+            AIM Identifier for TCIF Linked Code 39
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.SymbologyConfigurator.AimID.Trioptic">
+            <summary>
+            AIM Identifier for Trioptic
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.SymbologyConfigurator.AimID.UPC">
+            <summary>
+            AIM Identifier for UPC-A
+            </summary>
+        </member>
+        <member name="T:HandHeldProducts.Embedded.Decoding.SymbologyConfigurator.BitMasks">
+            <summary>
+            Symbology Configuration Mask Type
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.SymbologyConfigurator.BitMasks.All">
+            <summary>
+            Mask All.
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.SymbologyConfigurator.BitMasks.Flags">
+            <summary>
+            Mask the Flags.
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.SymbologyConfigurator.BitMasks.MaxLength">
+            <summary>
+            Mask the maximum length.
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.SymbologyConfigurator.BitMasks.MinLength">
+            <summary>
+            Mask the minimum length.
+            </summary>
+        </member>
+        <member name="T:HandHeldProducts.Embedded.Decoding.SymbologyConfigurator.CodeID">
+            <summary>
+            Honeywell Product Code Identifiers
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.SymbologyConfigurator.CodeID.AusPost">
+            <summary>
+            Honeywell Identifier for Australian Postal Code
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.SymbologyConfigurator.CodeID.Aztec">
+            <summary>
+            Honeywell Identifier for Aztec
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.SymbologyConfigurator.CodeID.BPO">
+            <summary>
+            Honeywell Identifier for Brotish Postal Code
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.SymbologyConfigurator.CodeID.CanPost">
+            <summary>
+            Honeywell Identifier for Canadian Postal Code
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.SymbologyConfigurator.CodeID.ChinaPost">
+            <summary>
+            Honeywell Identifier for China Postal Code
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.SymbologyConfigurator.CodeID.CodaBar">
+            <summary>
+            Honeywell Identifier for CodaBar
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.SymbologyConfigurator.CodeID.CodaBlock">
+            <summary>
+            Honeywell Identifier for CodaBlock
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.SymbologyConfigurator.CodeID.Code11">
+            <summary>
+            Honeywell Identifier for Code11
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.SymbologyConfigurator.CodeID.Code128">
+            <summary>
+            Honeywell Identifier for Code128
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.SymbologyConfigurator.CodeID.Code16K">
+            <summary>
+            Honeywell Identifier for Code16K
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.SymbologyConfigurator.CodeID.Code32">
+            <summary>
+            Honeywell Identifier for Code32
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.SymbologyConfigurator.CodeID.Code39">
+            <summary>
+            Honeywell Identifier for Code39
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.SymbologyConfigurator.CodeID.Code49">
+            <summary>
+            Honeywell Identifier for Code49
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.SymbologyConfigurator.CodeID.Code93">
+            <summary>
+            Honeywell Identifier for Code93
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.SymbologyConfigurator.CodeID.Composite">
+            <summary>
+            Honeywell Identifier for Composite
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.SymbologyConfigurator.CodeID.CouponCode">
+            <summary>
+            Honeywell Identifier for CouponCode
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.SymbologyConfigurator.CodeID.DataMatrix">
+            <summary>
+            Honeywell Identifier for DataMatrix
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.SymbologyConfigurator.CodeID.DutchPost">
+            <summary>
+            Honeywell Identifier for Dutch Postal Code
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.SymbologyConfigurator.CodeID.EAN">
+            <summary>
+            Honeywell Identifier for EAN
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.SymbologyConfigurator.CodeID.GS1_128">
+            <summary>
+            Honeywell Identifier for GS1_128
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.SymbologyConfigurator.CodeID.GRIDMATRIX">
+            <summary>
+            Honeywell Identifier for GridMatrix
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.SymbologyConfigurator.CodeID.HANXIN">
+            <summary>
+            Honeywell Identifier for HanXin
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.SymbologyConfigurator.CodeID.IATA25">
+            <summary>
+            Honeywell Identifier for IATA2/5
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.SymbologyConfigurator.CodeID.Int25">
+            <summary>
+            Honeywell Identifier for Interleaved 2/5
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.SymbologyConfigurator.CodeID.ISBT">
+            <summary>
+            Honeywell Identifier for ISBT
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.SymbologyConfigurator.CodeID.JaPost">
+            <summary>
+            Honeywell Identifier for Japan Postal Code
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.SymbologyConfigurator.CodeID.KoreaPost">
+            <summary>
+            Honeywell Identifier for Korean Postal Code
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.SymbologyConfigurator.CodeID.LabelCode4">
+            <summary>
+            Honeywell Identifier for LabelCode4
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.SymbologyConfigurator.CodeID.LabelCode5">
+            <summary>
+            Honeywell Identifier for LabelCode5
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.SymbologyConfigurator.CodeID.Matrix25">
+            <summary>
+            Honeywell Identifier for Matrix 2/5
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.SymbologyConfigurator.CodeID.MaxiCode">
+            <summary>
+            Honeywell Identifier for MaxiCode
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.SymbologyConfigurator.CodeID.MicroPDF">
+            <summary>
+            Honeywell Identifier for MicroPDF
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.SymbologyConfigurator.CodeID.MSI">
+            <summary>
+            Honeywell Identifier for MSI
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.SymbologyConfigurator.CodeID.OCR">
+            <summary>
+            Honeywell Identifier for OCR
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.SymbologyConfigurator.CodeID.PDF417">
+            <summary>
+            Honeywell Identifier for PDF417
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.SymbologyConfigurator.CodeID.Planet">
+            <summary>
+            Honeywell Identifier for Planet Code
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.SymbologyConfigurator.CodeID.Plessey">
+            <summary>
+            Honeywell Identifier for Plessey
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.SymbologyConfigurator.CodeID.PosiCode">
+            <summary>
+            Honeywell Identifier for PosiCode
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.SymbologyConfigurator.CodeID.PostNet">
+            <summary>
+            Honeywell Identifier for PostNet
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.SymbologyConfigurator.CodeID.QR">
+            <summary>
+            Honeywell Identifier for QR Code
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.SymbologyConfigurator.CodeID.RSS">
+            <summary>
+            Honeywell Identifier for RSS
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.SymbologyConfigurator.CodeID.Strt25">
+            <summary>
+            Honeywell Identifier for Straight 2/5
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.SymbologyConfigurator.CodeID.TelePen">
+            <summary>
+            Honeywell Identifier for TelePen
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.SymbologyConfigurator.CodeID.TLC39">
+            <summary>
+            Honeywell Identifier for TCIF Linked 39
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.SymbologyConfigurator.CodeID.Trioptic">
+            <summary>
+            Honeywell Identifier for Trioptic
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.SymbologyConfigurator.CodeID.UPC">
+            <summary>
+            Honeywell Identifier for UPC
+            </summary>
+        </member>
+        <member name="T:HandHeldProducts.Embedded.Decoding.SymbologyConfigurator.ConfigurationTypes">
+            <summary>
+            The Symbology Configuration Type Options 
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.SymbologyConfigurator.ConfigurationTypes.Flags">
+            <summary>
+            Flags only.
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.SymbologyConfigurator.ConfigurationTypes.FlagsRange">
+            <summary>
+            Flags and Range.
+            </summary>
+        </member>
+        <member name="T:HandHeldProducts.Embedded.Decoding.SymbologyConfigurator.OCRFonts">
+            <summary>
+            OCR Font Types
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.SymbologyConfigurator.OCRFonts.Disabled">
+            <summary>
+            Disable OCR fonts.
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.SymbologyConfigurator.OCRFonts.A">
+            <summary>
+            Enable OCR A.
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.SymbologyConfigurator.OCRFonts.B">
+            <summary>
+            Enable OCR B.
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.SymbologyConfigurator.OCRFonts.Money">
+            <summary>
+            Enable monetary OCR.
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.SymbologyConfigurator.OCRFonts.MicrUnsupported">
+            <summary>
+            OCR Micr is unsupported.
+            </summary>
+        </member>
+        <member name="T:HandHeldProducts.Embedded.Decoding.SymbologyConfigurator.Symbologies">
+            <summary>
+            Symbology Identifiers for Configuration
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.SymbologyConfigurator.Symbologies.Aztec">
+            <summary>
+            Aztec Symbology.
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.SymbologyConfigurator.Symbologies.CodaBar">
+            <summary>
+            CodaBar Symbology.
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.SymbologyConfigurator.Symbologies.Code11">
+            <summary>
+            Code 11 Symbology.
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.SymbologyConfigurator.Symbologies.Code128">
+            <summary>
+            Code 128 Symbology.
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.SymbologyConfigurator.Symbologies.Code39">
+            <summary>
+            Code 39 Symbology.
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.SymbologyConfigurator.Symbologies.Code49">
+            <summary>
+            Code 49 Symbology.
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.SymbologyConfigurator.Symbologies.Code93">
+            <summary>
+            Code 93 Symbology.
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.SymbologyConfigurator.Symbologies.Composite">
+            <summary>
+            EAN.UCC (Composite) Symbology.
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.SymbologyConfigurator.Symbologies.DataMatrix">
+            <summary>
+            Data Matrix Symbology.
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.SymbologyConfigurator.Symbologies.EAN8">
+            <summary>
+            EAN-8 Symbology.
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.SymbologyConfigurator.Symbologies.EAN13">
+            <summary>
+            EAN-13 Symbology.
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.SymbologyConfigurator.Symbologies.Int25">
+            <summary>
+            Interleaved 2 of 5 Symbology.
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.SymbologyConfigurator.Symbologies.MaxiCode">
+            <summary>
+            MaxiCode Symbology.
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.SymbologyConfigurator.Symbologies.MicroPDF">
+            <summary>
+            MicroPDF Symbology.
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.SymbologyConfigurator.Symbologies.OCR">
+            <summary>
+            Optical Character Recognition (OCR) Symbology.
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.SymbologyConfigurator.Symbologies.PDF417">
+            <summary>
+            PDF417 Symbology.
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.SymbologyConfigurator.Symbologies.PostNet">
+            <summary>
+            PostNet Symbology
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.SymbologyConfigurator.Symbologies.QR">
+            <summary>
+            QR Code / Micro QR Code Symbology.
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.SymbologyConfigurator.Symbologies.RSS">
+            <summary>
+            EAN.UCC (RSS) Symbology.
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.SymbologyConfigurator.Symbologies.UPCA">
+            <summary>
+            UPC-A Symbology.
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.SymbologyConfigurator.Symbologies.UPCE0">
+            <summary>
+            UPC-E Symbology.
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.SymbologyConfigurator.Symbologies.UPCE1">
+            <summary>
+            UPC-E1 Symbology.
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.SymbologyConfigurator.Symbologies.ISBT">
+            <summary>
+            ISBT 128 Symbology.
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.SymbologyConfigurator.Symbologies.BPO">
+            <summary>
+            British Post Symbology.
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.SymbologyConfigurator.Symbologies.CanPost">
+            <summary>
+            Canadian Post Symbology.
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.SymbologyConfigurator.Symbologies.AusPost">
+            <summary>
+            Australian Post Symbology.
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.SymbologyConfigurator.Symbologies.IATA25">
+            <summary>
+            Straight 2 of 5 (IATA) Symbology.
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.SymbologyConfigurator.Symbologies.CodaBlock">
+            <summary>
+            CodaBlock F Symbology.
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.SymbologyConfigurator.Symbologies.JaPost">
+            <summary>
+            Japanese Postal Symbology.
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.SymbologyConfigurator.Symbologies.Planet">
+            <summary>
+            Planet Code Symbology.
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.SymbologyConfigurator.Symbologies.DutchPost">
+            <summary>
+            KIX (Netherlands) Postal Symbology.
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.SymbologyConfigurator.Symbologies.MSI">
+            <summary>
+            MSI Symbology.
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.SymbologyConfigurator.Symbologies.TLC39">
+            <summary>
+            TCIF Linked Code 39 (TLC39) Symbology.
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.SymbologyConfigurator.Symbologies.Trioptic">
+            <summary>
+            Trioptic Code Symbology.
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.SymbologyConfigurator.Symbologies.Code32">
+            <summary>
+            Code 32 Symbology.
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.SymbologyConfigurator.Symbologies.Strt25">
+            <summary>
+            Straight 2 of 5 (Industrial) Symbology.
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.SymbologyConfigurator.Symbologies.Matrix25">
+            <summary>
+            Matrix 2 of 5 Symbology.
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.SymbologyConfigurator.Symbologies.Plessey">
+            <summary>
+            Plessey Code Symbology.
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.SymbologyConfigurator.Symbologies.ChinaPost">
+            <summary>
+            China Postal Symbology.
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.SymbologyConfigurator.Symbologies.KoreaPost">
+            <summary>
+            Korea Postal Symbology.
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.SymbologyConfigurator.Symbologies.TelePen">
+            <summary>
+            TelePen Symbology.
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.SymbologyConfigurator.Symbologies.Code16K">
+            <summary>
+            Code1 16K Symbology.
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.SymbologyConfigurator.Symbologies.PosiCode">
+            <summary>
+            PosiCode Symbology.
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.SymbologyConfigurator.Symbologies.CouponCode">
+            <summary>
+            UPC-A (Coupon Code) Symbology.
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.SymbologyConfigurator.Symbologies.Usps4Cb">
+            <summary>
+            4-CB (4-State Customer Barcode) Symbology.
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.SymbologyConfigurator.Symbologies.IDTag">
+            <summary>
+            ID-Tag (UPU 4-State)Symbology.
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.SymbologyConfigurator.Symbologies.LabelCode">
+            <summary>
+            Label Code 4 and 5 Symbology.
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.SymbologyConfigurator.Symbologies.GS1_128">
+            <summary>
+            GS1_128 Symbology.
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.SymbologyConfigurator.Symbologies.HanXin">
+            <summary>
+            HanXin Symbology.
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.SymbologyConfigurator.Symbologies.GridMatrix">
+            <summary>
+            Grid Matrix Symbology.
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.SymbologyConfigurator.Symbologies.All">
+            <summary>
+            All Available Symbologies.
+            </summary>
+        </member>
+        <member name="T:HandHeldProducts.Embedded.Decoding.SymbologyConfigurator.SymbologyFlags">
+            <summary>
+            Symbology Bit Mask Options
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.SymbologyConfigurator.SymbologyFlags.Addenda2Digit">
+            <summary>
+            2 Digit Supplimental/Addenda.
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.SymbologyConfigurator.SymbologyFlags.Addenda5Digit">
+            <summary>
+            5 Digit Supplimental/Addenda.
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.SymbologyConfigurator.SymbologyFlags.AddendaRequired">
+            <summary>
+            Supplimental/Addenda Is Required.
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.SymbologyConfigurator.SymbologyFlags.AddendaSeparator">
+            <summary>
+            Supplimental/Addenda Separator.
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.SymbologyConfigurator.SymbologyFlags.AustralianBarWidth">
+            <summary>
+            Australian Bar Width.
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.SymbologyConfigurator.SymbologyFlags.AztecRunEnable">
+            <summary>
+            Enable Aztec Run.
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.SymbologyConfigurator.SymbologyFlags.CheckEnable">
+            <summary>
+            Enable Check Digit.
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.SymbologyConfigurator.SymbologyFlags.CheckTransmit">
+            <summary>
+            Enable Transmit Character.
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.SymbologyConfigurator.SymbologyFlags.CodaBarConcatenate">
+            <summary>
+            CodaBar Concatenate.
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.SymbologyConfigurator.SymbologyFlags.CompositeUpc">
+            <summary>
+            Composite UPC.
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.SymbologyConfigurator.SymbologyFlags.Enable">
+            <summary>
+            Enable.
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.SymbologyConfigurator.SymbologyFlags.EnableAppendMode">
+            <summary>
+            Enable Append Mode.
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.SymbologyConfigurator.SymbologyFlags.EnableFullAscii">
+            <summary>
+            Enable Full Ascii.
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.SymbologyConfigurator.SymbologyFlags.ExpandedUpcE">
+            <summary>
+            Expanded UPC-E
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.SymbologyConfigurator.SymbologyFlags.NumSysTransmit">
+            <summary>
+            Transmit Number System.
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.SymbologyConfigurator.SymbologyFlags.PosiCodeLimited1">
+            <summary>
+            PosiCode Limited 1.
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.SymbologyConfigurator.SymbologyFlags.PosiCodeLimited2">
+            <summary>
+            PosiCode Limited 2.
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.SymbologyConfigurator.SymbologyFlags.RseEnable">
+            <summary>
+            Enable RSE.
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.SymbologyConfigurator.SymbologyFlags.RslEnable">
+            <summary>
+            Enable RSL.
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.SymbologyConfigurator.SymbologyFlags.RssEnable">
+            <summary>
+            Enable RSS.
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.SymbologyConfigurator.SymbologyFlags.StartStopTransmit">
+            <summary>
+            Enable Start / Stop Transmit.
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.SymbologyConfigurator.SymbologyFlags.TelePenOldStyle">
+            <summary>
+            Enable TelePen Old Style.
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.SymbologyConfigurator.SymbologyFlags.UPCFar">
+            <summary>
+            Enable UPC far decoding mode.
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.SymbologyConfigurator.SymbologyFlags.Code128Far">
+            <summary>
+            Enable Code128 far decoding mode.
+            </summary>
+        </member>
+        <member name="T:HandHeldProducts.Embedded.Decoding.DecodeException">
+            <summary>
+            The DecodeException class exposed decode specific exceptions.  
+            </summary>
+        </member>
+        <member name="P:HandHeldProducts.Embedded.Decoding.DecodeException.ResultCode">
+            <summary>
+            Returns the embedded Result code contained within the exception.
+            </summary>
+        </member>
+        <member name="T:HandHeldProducts.Embedded.Decoding.DecodeAssembly">
+            <summary>
+            The DecodeAssembly is the entry point for the DecodeAssembly.  This class exposes all decode functionality.
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.DecodeAssembly.Device">
+            <summary>
+            Exposes the Device class.
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.DecodeAssembly.Sound">
+            <summary>
+            Exposes the Sound Class.
+            </summary>
+        </member>
+        <member name="M:HandHeldProducts.Embedded.Decoding.DecodeAssembly.#ctor">
+            <summary>
+            Default Constructor.
+            </summary>
+        </member>
+        <member name="M:HandHeldProducts.Embedded.Decoding.DecodeAssembly.Dispose">
+            <summary>
+            Releases all of the DecodeAssemblies resources.
+            </summary>
+        </member>
+        <member name="M:HandHeldProducts.Embedded.Decoding.DecodeAssembly.Finalize">
+            <summary>
+            Finalizer
+            </summary>
+        </member>
+        <member name="M:HandHeldProducts.Embedded.Decoding.DecodeAssembly.Dispose(System.Boolean)">
+            <summary>
+            
+            </summary>
+            <param name="Disposing"></param>
+        </member>
+        <member name="M:HandHeldProducts.Embedded.Decoding.DecodeAssembly.OnDecodeEvent(HandHeldProducts.Embedded.Decoding.DecodeAssembly.DecodeEventArgs)">
+            <summary>
+            Event method used to raise the Decode event by invoking the delegate
+            </summary>
+            <param name="e">DecodeEventArgs class</param>
+        </member>
+        <member name="M:HandHeldProducts.Embedded.Decoding.DecodeAssembly.OnMultiDecodeEvent(HandHeldProducts.Embedded.Decoding.DecodeAssembly.MultiDecodeEventArgs)">
+            <summary>
+            Event method used to raise the MultiDecode event by invoking the delegate
+            </summary>
+            <param name="e">DecodeEventArgs class</param>
+        </member>
+        <member name="M:HandHeldProducts.Embedded.Decoding.DecodeAssembly.CancelScanBarcode">
+            <summary>
+            Cancels the current asynchronous decode operation.
+            </summary>
+        </member>
+        <member name="M:HandHeldProducts.Embedded.Decoding.DecodeAssembly.CancelMultiDecode">
+            <summary>
+            Cancels the current ScanMultipleBarcodes operation.
+            </summary>
+        </member>
+        <member name="M:HandHeldProducts.Embedded.Decoding.DecodeAssembly.GetDecodeCenteringWindow(HandHeldProducts.Embedded.Decoding.DecodeAssembly.SetupTypes,System.Boolean@,HandHeldProducts.Embedded.Decoding.DecodeAssembly.CenteringWindow)">
+            <summary>
+            Gets the decode centering window configuration.
+            </summary>
+            <param name="SetupType">Specifies the type of setup to retrieve.</param>
+            <param name="Enabled">Specifies if centering is enabled or disabled.</param>
+            <param name="Rectangle">Specifies the Centering window / area.</param>
+        </member>
+        <member name="M:HandHeldProducts.Embedded.Decoding.DecodeAssembly.GetExposureSettings(HandHeldProducts.Embedded.Decoding.DecodeAssembly.ExposureSettings)">
+            <summary>
+            Gets the exposure setting.
+            </summary>
+            <param name="ExposureSetting"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HandHeldProducts.Embedded.Decoding.DecodeAssembly.GetOcr(HandHeldProducts.Embedded.Decoding.SymbologyConfigurator.OCRFonts@,System.String@,System.String@,System.String@,System.String@)">
+            <summary>
+            Gets the current OCR decoding configuration.
+            </summary>
+            <param name="OcrFont">Determines which OCR fonts are used for decoding.</param>
+            <param name="Pattern">A string that represents one or more patterns
+            for the OCR decode. The following characters are allowed:
+            A-Z: capital letters are matched as is.
+            d: a digit from 0 to 9.
+            a: alphanumeric character.
+            l: alphabetic letter.
+            g: any character specified in groupG.
+            h: any character specified in groupH.</param>
+            <param name="GroupG">A string that represents a list of characters that
+            can be substituted for the lower case 'g' in the template strings.</param>
+            <param name="GroupH">A string that represents a list of characters that
+            can be substituted for the lower case 'h' in the template strings.</param>
+            <param name="CheckChar">A null-terminated string that represents a check
+            character position in the template strings.</param>
+        </member>
+        <member name="M:HandHeldProducts.Embedded.Decoding.DecodeAssembly.ScanBarcode">
+            <summary>
+            Initiate an Asynchronous Decode Operation.
+            </summary>
+        </member>
+        <member name="M:HandHeldProducts.Embedded.Decoding.DecodeAssembly.ScanMultipleBarcodes(System.Int32,System.Int32)">
+            <summary>
+            Initiate a Multiple Decode Operation.
+            </summary>
+            <param name="scanTimeout">The maximum time to perform the operation.</param>
+            <param name="vKey">The key used to call the ScanMultipleBarcodes procedure.</param>
+        </member>
+        <member name="M:HandHeldProducts.Embedded.Decoding.DecodeAssembly.SetDecodeCenteringWindow(HandHeldProducts.Embedded.Decoding.DecodeAssembly.SetupTypes,System.Boolean,HandHeldProducts.Embedded.Decoding.DecodeAssembly.CenteringWindow)">
+            <summary>
+            Sets the decode centering window configuration.
+            </summary>
+            <param name="SetupType">The type to configure, default or current.</param>
+            <param name="Enable">Used to enable or disable centering.</param>
+            <param name="Rectangle">The centering window / area to configure.</param>
+        </member>
+        <member name="M:HandHeldProducts.Embedded.Decoding.DecodeAssembly.SetExposureSettings(HandHeldProducts.Embedded.Decoding.DecodeAssembly.ExposureSettings,System.Int32)">
+            <summary>
+            Sets the desired exposure settings.
+            </summary>
+            <param name="ExposureSetting">The exposure setting to configure.</param>
+            <param name="Value">The value to set.</param>
+        </member>
+        <member name="M:HandHeldProducts.Embedded.Decoding.DecodeAssembly.SetOcr(HandHeldProducts.Embedded.Decoding.SymbologyConfigurator.OCRFonts,System.String,System.String,System.String,System.String)">
+            <summary>
+            Sets the current OCR decoding configuration.
+            </summary>
+            <param name="OcrFont">Determines which OCR fonts are used for decoding.</param>
+            <param name="Pattern">A string that represents one or more patterns
+            for the OCR decode. The following characters are allowed:
+            A-Z: capital letters are matched as is.
+            d: a digit from 0 to 9.
+            a: alphanumeric character.
+            l: alphabetic letter.
+            g: any character specified in groupG.
+            h: any character specified in groupH.</param>
+            <param name="GroupG">A string that represents a list of characters that
+            can be substituted for the lower case 'g' in the template strings.</param>
+            <param name="GroupH">A string that represents a list of characters that
+            can be substituted for the lower case 'h' in the template strings.</param>
+            <param name="CheckChar">A null-terminated string that represents a check
+            character position in the template strings.</param>
+        </member>
+        <member name="M:HandHeldProducts.Embedded.Decoding.DecodeAssembly.ConfigureFromExm(HandHeldProducts.Embedded.Decoding.DecodeAssembly@,System.String,HandHeldProducts.Embedded.Decoding.ExmDecodeSection)">
+            <summary>
+            Configures the decode settings from an EXM file.
+            </summary>
+            <param name="oDecodeAssembly">Instance of the decode assembly.</param>
+            <param name="ExmFile">Path to the exm file.</param>
+            <param name="ExmSection">The section of the EXM file to apply.</param>
+        </member>
+        <member name="M:HandHeldProducts.Embedded.Decoding.DecodeAssembly.EnableSymbology(HandHeldProducts.Embedded.Decoding.SymbologyConfigurator.Symbologies,System.Boolean)">
+            <summary>
+            Enables or disables a specified symbology.
+            </summary>
+            <param name="Symbology">Symbology to perform the operation on.</param>
+            <param name="State">State of the symbology.  True to enable, false to disable.</param>
+        </member>
+        <member name="M:HandHeldProducts.Embedded.Decoding.DecodeAssembly.SetSymbologyDefaults(HandHeldProducts.Embedded.Decoding.SymbologyConfigurator.Symbologies)">
+            <summary>
+            Sets the default settings for a specific symbology.
+            </summary>
+            <param name="Symbology">Specified symbology.</param>
+        </member>
+        <member name="M:HandHeldProducts.Embedded.Decoding.DecodeAssembly.IsSymbologyEnabled(HandHeldProducts.Embedded.Decoding.SymbologyConfigurator.Symbologies)">
+            <summary>
+            Determines if a specific symbology enum is enabled.
+            </summary>
+            <param name="Symbology">The Symbology to check.</param>
+            <returns>True if enabled, false is disabled.</returns>
+        </member>
+        <member name="M:HandHeldProducts.Embedded.Decoding.DecodeAssembly.OnIqImageEvent(HandHeldProducts.Embedded.Decoding.DecodeAssembly.IqImageEventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:HandHeldProducts.Embedded.Decoding.DecodeAssembly.CancelCaptureIqImage">
+            <summary>
+            Cancels the current asynchronous IQ Image operation.
+            </summary>
+        </member>
+        <member name="M:HandHeldProducts.Embedded.Decoding.DecodeAssembly.CaptureIqImage(HandHeldProducts.Embedded.Decoding.DecodeAssembly.IqImageTypes,HandHeldProducts.Embedded.Decoding.DecodeAssembly.IqImageDescriptors)">
+            <summary>
+            Starts an asynchronous IQ Image Operation.
+            </summary>
+            <param name="IqImageType">The type of capture to execute.</param>
+            <param name="IqImageDescriptors">Defined IQ settings.</param>
+        </member>
+        <member name="M:HandHeldProducts.Embedded.Decoding.DecodeAssembly.GetLastImageSize(System.Int16@,System.Int16@,System.Int32@)">
+            <summary>
+            Returns the dimensions of the last aquired image.
+            </summary>
+            <param name="Width">Returned width of the image.</param>
+            <param name="Height">Returned Height of the image.</param>
+            <param name="Size">Returned size of the image.</param>
+        </member>
+        <member name="M:HandHeldProducts.Embedded.Decoding.DecodeAssembly.SaveLastImage(HandHeldProducts.Embedded.Decoding.DecodeAssembly.IqImageFileFormats)">
+            <summary>
+            Saves the last decode image to an image file.
+            </summary>
+            <param name="ImageFileFormat">The format to save the image.</param>
+        </member>
+        <member name="P:HandHeldProducts.Embedded.Decoding.DecodeAssembly.ApiRevision">
+            <summary>
+            Returns The Decoder API Revision.
+            </summary>
+        </member>
+        <member name="P:HandHeldProducts.Embedded.Decoding.DecodeAssembly.DecoderRevision">
+            <summary>
+            Returns The Decoder Library Revision.
+            </summary>
+        </member>
+        <member name="P:HandHeldProducts.Embedded.Decoding.DecodeAssembly.ScanDriverRevision">
+            <summary>
+            Returns The Scan Driver Revision
+            </summary>
+        </member>
+        <member name="P:HandHeldProducts.Embedded.Decoding.DecodeAssembly.DecodeAttemptLimit">
+            <summary>
+            Get/Set 
+            </summary>
+        </member>
+        <member name="P:HandHeldProducts.Embedded.Decoding.DecodeAssembly.DecodeMode">
+            <summary>
+            Get/Set The Decode Mode.
+            </summary>
+        </member>
+        <member name="P:HandHeldProducts.Embedded.Decoding.DecodeAssembly.LinearRange">
+            <summary>
+            Get/Set The Linear Range when ALD Mode is Enabled.
+            </summary>
+        </member>
+        <member name="P:HandHeldProducts.Embedded.Decoding.DecodeAssembly.PrintWeight">
+            <summary>
+            Get/Set The Quality of the Printed Barcode (1 - Light, 7 - Dark).
+            </summary>
+        </member>
+        <member name="P:HandHeldProducts.Embedded.Decoding.DecodeAssembly.SearchTimeLimit">
+            <summary>
+            Get/Set The Maximum Time (ms) Allowed to Search for a Symbology in the Image.
+            </summary>
+        </member>
+        <member name="P:HandHeldProducts.Embedded.Decoding.DecodeAssembly.VideoReverse">
+            <summary>
+            Get/Set Video Mode.  Allows for a White Barcode on a Black Background to be Decoded.
+            </summary>
+        </member>
+        <member name="P:HandHeldProducts.Embedded.Decoding.DecodeAssembly.ScanningLightsMode">
+            <summary>
+            Get/Set the Scanning Lights mode of the device.  This property is only activated during the scanning process.
+            </summary>
+        </member>
+        <member name="P:HandHeldProducts.Embedded.Decoding.DecodeAssembly.ExposureMode">
+            <summary>
+            Get/Set The Current Exposure Mode.
+            </summary>
+        </member>
+        <member name="P:HandHeldProducts.Embedded.Decoding.DecodeAssembly.LastDecodeTime">
+            <summary>
+            Returns The Amount of Time (ms) Taken for the Last Decode Operation.
+            </summary>
+        </member>
+        <member name="P:HandHeldProducts.Embedded.Decoding.DecodeAssembly.MaxMessageChars">
+            <summary>
+            Returns The Maximum Number of Characters that can be Returned by the Scan Engine.
+            </summary>
+        </member>
+        <member name="P:HandHeldProducts.Embedded.Decoding.DecodeAssembly.ScanInProgress">
+            <summary>
+            Determines if a Scan Operation is Currently in Progress.
+            </summary>
+        </member>
+        <member name="P:HandHeldProducts.Embedded.Decoding.DecodeAssembly.ScanTimeout">
+            <summary>
+            Get/Set The Maximum Time (ms) Allowed for a Decode Attempt During a Single Operation.
+            </summary>
+        </member>
+        <member name="E:HandHeldProducts.Embedded.Decoding.DecodeAssembly.DecodeEvent">
+            <summary>
+            Public instance of the Decode Event.
+            </summary>
+        </member>
+        <member name="E:HandHeldProducts.Embedded.Decoding.DecodeAssembly.MultiDecodeEvent">
+            <summary>
+            Public instance of the DecMultiDecodeode Event.
+            </summary>
+        </member>
+        <member name="P:HandHeldProducts.Embedded.Decoding.DecodeAssembly.IqImageRawData">
+            <summary>
+            Returns The Raw IQ Image Data 
+            </summary>
+        </member>
+        <member name="E:HandHeldProducts.Embedded.Decoding.DecodeAssembly.IqImageEvent">
+            <summary>
+            Public instance of the IQ Image Event.
+            </summary>
+        </member>
+        <member name="T:HandHeldProducts.Embedded.Decoding.DecodeAssembly.ScanningLightsModes">
+            <summary>
+            Scanning light modes values.
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.DecodeAssembly.ScanningLightsModes.None">
+            <summary>
+            Disables both the aimer and illumination during scanning.
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.DecodeAssembly.ScanningLightsModes.AimerOnly">
+            <summary>
+            Enables only the aimer during scanning.
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.DecodeAssembly.ScanningLightsModes.IlluminationOnly">
+            <summary>
+            Enables only illuminatino during scanning.
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.DecodeAssembly.ScanningLightsModes.AimerAndIllumination">
+            <summary>
+            Enables alternating aimer and illumination during scanning.
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.DecodeAssembly.ScanningLightsModes.Concurrent">
+            <summary>
+            Enables solid aimer and illumination during scanning.
+            </summary>
+        </member>
+        <member name="T:HandHeldProducts.Embedded.Decoding.DecodeAssembly.DecodeModes">
+            <summary>
+            Decode Operation Modes.
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.DecodeAssembly.DecodeModes.Standard">
+            <summary>
+            Standard Mode.
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.DecodeAssembly.DecodeModes.QuickOmni">
+            <summary>
+            Quick Omni Mode.
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.DecodeAssembly.DecodeModes.LinearPriority">
+            <summary>
+            Linear Priority Mode.
+            </summary>
+        </member>
+        <member name="T:HandHeldProducts.Embedded.Decoding.DecodeAssembly.OcrFormats">
+            <summary>
+            OCR Formats.
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.DecodeAssembly.OcrFormats.Disabled">
+            <summary>
+            None.
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.DecodeAssembly.OcrFormats.A">
+            <summary>
+            OCR_A Format.
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.DecodeAssembly.OcrFormats.B">
+            <summary>
+            OCR_B Format.
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.DecodeAssembly.OcrFormats.Money">
+            <summary>
+            Money Format.
+            </summary>
+        </member>
+        <member name="T:HandHeldProducts.Embedded.Decoding.DecodeAssembly.ExposureModes">
+            <summary>
+            Exposure Modes.
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.DecodeAssembly.ExposureModes.Fixed">
+            <summary>
+            Fixed Exposure.
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.DecodeAssembly.ExposureModes.OnChip">
+            <summary>
+            On Chip Exposure.
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.DecodeAssembly.ExposureModes.HHP">
+            <summary>
+            Honeywell Exposure.
+            </summary>
+        </member>
+        <member name="T:HandHeldProducts.Embedded.Decoding.DecodeAssembly.ExposureSettings">
+            <summary>
+            Exposure Settings.
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.DecodeAssembly.ExposureSettings.ExposureMethod">
+            <summary>
+            Exposure Method.
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.DecodeAssembly.ExposureSettings.TargetValue">
+            <summary>
+            Target Value.
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.DecodeAssembly.ExposureSettings.TargetPercentile">
+            <summary>
+            Target Percentile.
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.DecodeAssembly.ExposureSettings.TargetAcceptGap">
+            <summary>
+            Target Accept Gap.
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.DecodeAssembly.ExposureSettings.MaximumExposure">
+            <summary>
+            Maximum Exposure.
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.DecodeAssembly.ExposureSettings.MaximumGain">
+            <summary>
+            Minimum Gain.
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.DecodeAssembly.ExposureSettings.ConformImage">
+            <summary>
+            Conform Image.
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.DecodeAssembly.ExposureSettings.ConformAttempts">
+            <summary>
+            Conform Attemps.
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.DecodeAssembly.ExposureSettings.FixedExposure">
+            <summary>
+            Fixed Exposure.
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.DecodeAssembly.ExposureSettings.FixedGain">
+            <summary>
+            Fixed Gain.
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.DecodeAssembly.ExposureSettings.FixedFrameRate">
+            <summary>
+            Fixed Frame Rate.
+            </summary>
+        </member>
+        <member name="T:HandHeldProducts.Embedded.Decoding.DecodeAssembly.ResultCodes">
+            <summary>
+            Possible Return Codes from PInvoke Decoder.dll Function Calls
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.DecodeAssembly.ResultCodes.Initialize">
+            <summary>
+            Initialize state.
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.DecodeAssembly.ResultCodes.Success">
+            <summary>
+            Successful operation.
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.DecodeAssembly.ResultCodes.BadRegion">
+            <summary>
+            Bad Region error.
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.DecodeAssembly.ResultCodes.DriverError">
+            <summary>
+            Driver error.
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.DecodeAssembly.ResultCodes.EngineBusy">
+            <summary>
+            Scan Engine is busy.
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.DecodeAssembly.ResultCodes.MemoryError">
+            <summary>
+            Memory error.
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.DecodeAssembly.ResultCodes.NoDecode">
+            <summary>
+            Failed decode attempt.
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.DecodeAssembly.ResultCodes.NoImage">
+            <summary>
+            Failed Image Attempt.
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.DecodeAssembly.ResultCodes.NoResponse">
+            <summary>
+            No Response from scan engine.
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.DecodeAssembly.ResultCodes.NotConnected">
+            <summary>
+            Scan engine not connected.
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.DecodeAssembly.ResultCodes.ParameterError">
+            <summary>
+            Bad Parameter.
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.DecodeAssembly.ResultCodes.UnSupported">
+            <summary>
+            Operation not supported.
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.DecodeAssembly.ResultCodes.NoTrigger">
+            <summary>
+            The Trigger State is false.
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.DecodeAssembly.ResultCodes.BadSmartImage">
+            <summary>
+            Bad IQ image.
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.DecodeAssembly.ResultCodes.SmartImageTooLarge">
+            <summary>
+            IQ image is too big.
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.DecodeAssembly.ResultCodes.TooMuchInterpolation">
+            <summary>
+            Too Much Interpolation.
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.DecodeAssembly.ResultCodes.WrongResultStruct">
+            <summary>
+            Bad Result Structure.
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.DecodeAssembly.ResultCodes.ThreadError">
+            <summary>
+            Failed Threaded operation.
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.DecodeAssembly.ResultCodes.Cancel">
+            <summary>
+            Operation Canceled.
+            </summary>
+        </member>
+        <member name="T:HandHeldProducts.Embedded.Decoding.DecodeAssembly.SetupTypes">
+            <summary>
+            The Configuration Type to be Applied
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.DecodeAssembly.SetupTypes.Default">
+            <summary>
+            The default values.
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.DecodeAssembly.SetupTypes.Current">
+            <summary>
+            The current values.
+            </summary>
+        </member>
+        <member name="T:HandHeldProducts.Embedded.Decoding.DecodeAssembly.DecodeEventHandler">
+            <summary>
+            Decode event delegate that handles the DecodeEventArgs.
+            </summary>
+            <param name="sender">Sender source.</param>
+            <param name="e">DecodeEventArgs class.</param>
+        </member>
+        <member name="T:HandHeldProducts.Embedded.Decoding.DecodeAssembly.DecodeEventArgs">
+            <summary>
+            The DecodeEventArgs class defines the data being passed to the decode event.
+            </summary>
+        </member>
+        <member name="P:HandHeldProducts.Embedded.Decoding.DecodeAssembly.DecodeEventArgs.Exception">
+            <summary>
+            Returns the Exception.
+            </summary>
+        </member>
+        <member name="P:HandHeldProducts.Embedded.Decoding.DecodeAssembly.DecodeEventArgs.DecodeException">
+            <summary>
+            Returns the DecodeException.
+            </summary>
+        </member>
+        <member name="P:HandHeldProducts.Embedded.Decoding.DecodeAssembly.DecodeEventArgs.ResultCode">
+            <summary>
+            Returns the Result code.
+            </summary>
+        </member>
+        <member name="P:HandHeldProducts.Embedded.Decoding.DecodeAssembly.DecodeEventArgs.Message">
+            <summary>
+            Returns the Message.
+            </summary>
+        </member>
+        <member name="P:HandHeldProducts.Embedded.Decoding.DecodeAssembly.DecodeEventArgs.CodeId">
+            <summary>
+            Returns the Code ID.
+            </summary>
+        </member>
+        <member name="P:HandHeldProducts.Embedded.Decoding.DecodeAssembly.DecodeEventArgs.AimId">
+            <summary>
+            Returns the Aim ID.
+            </summary>
+        </member>
+        <member name="P:HandHeldProducts.Embedded.Decoding.DecodeAssembly.DecodeEventArgs.AimModifier">
+            <summary>
+            Returns the Aim Modifier.
+            </summary>
+        </member>
+        <member name="P:HandHeldProducts.Embedded.Decoding.DecodeAssembly.DecodeEventArgs.Length">
+            <summary>
+            Returns the Length.
+            </summary>
+        </member>
+        <member name="P:HandHeldProducts.Embedded.Decoding.DecodeAssembly.DecodeEventArgs.RawData">
+            <summary>
+            Returns the raw decoded data.
+            </summary>
+        </member>
+        <member name="T:HandHeldProducts.Embedded.Decoding.DecodeAssembly.MultiDecodeEventHandler">
+            <summary>
+            MultiDecode event delegate that handles the MultiDecodeEventArgs.
+            </summary>
+            <param name="sender">Sender source.</param>
+            <param name="e">MultiDecodeEventArgs class.</param>
+        </member>
+        <member name="T:HandHeldProducts.Embedded.Decoding.DecodeAssembly.MultiDecodeEventArgs">
+            <summary>
+            The MultiDecodeEventArgs class defines the data being passed to the Multidecode event.
+            </summary>
+        </member>
+        <member name="T:HandHeldProducts.Embedded.Decoding.DecodeAssembly.CenteringWindow">
+            <summary>
+            The CenteringWindow class defines the Centering Window Rectagle based off of the scan engine.
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.DecodeAssembly.CenteringWindow.Left">
+            <summary>
+            Upper Left X Coordinate of the rectangle.
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.DecodeAssembly.CenteringWindow.Top">
+            <summary>
+            Upper Left Y Coordinate of the Rectangle.
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.DecodeAssembly.CenteringWindow.Right">
+            <summary>
+            Lower Right X Coordinate of the Rectangle.
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.DecodeAssembly.CenteringWindow.Bottom">
+            <summary>
+            Lower Right Y Coordinate of the Rectangle.
+            </summary>
+        </member>
+        <member name="M:HandHeldProducts.Embedded.Decoding.DecodeAssembly.CenteringWindow.#ctor">
+            <summary>
+            Default Constructor.
+            </summary>
+        </member>
+        <member name="M:HandHeldProducts.Embedded.Decoding.DecodeAssembly.CenteringWindow.#ctor(System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Overloaded Constructor for the CenteringWindow Class.
+            </summary>
+            <param name="Left">Upper Left X Coordinate of the rectangle.</param>
+            <param name="Top">Upper Left Y Coordinate of the Rectangle.</param>
+            <param name="Right">Lower Right X Coordinate of the Rectangle.</param>
+            <param name="Bottom">Lower Right Y Coordinate of the Rectangle.</param>
+        </member>
+        <member name="T:HandHeldProducts.Embedded.Decoding.DecodeAssembly.IqImageFileFormats">
+            <summary>
+            Image File Format Options
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.DecodeAssembly.IqImageFileFormats.Bmp">
+            <summary>
+            Bitmap Format.
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.DecodeAssembly.IqImageFileFormats.Gif">
+            <summary>
+            Graphics Interchange Format
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.DecodeAssembly.IqImageFileFormats.Jpeg">
+            <summary>
+            Joint Photographic Experts Group Format
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.DecodeAssembly.IqImageFileFormats.Png">
+            <summary>
+            Portable Network Graphics Format
+            </summary>
+        </member>
+        <member name="T:HandHeldProducts.Embedded.Decoding.DecodeAssembly.IqImageFormats">
+            <summary>
+            IQ Image Format Options
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.DecodeAssembly.IqImageFormats.Binary">
+            <summary>
+            Binarized Scale.
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.DecodeAssembly.IqImageFormats.Gray">
+            <summary>
+            Gray Scale.
+            </summary>
+        </member>
+        <member name="T:HandHeldProducts.Embedded.Decoding.DecodeAssembly.IqImageTypes">
+            <summary>
+            IQ Image Operation Types
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.DecodeAssembly.IqImageTypes.BarcodeAndImage">
+            <summary>
+            Both Barcode and Image.
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.DecodeAssembly.IqImageTypes.ImageOnly">
+            <summary>
+            Only the Image.
+            </summary>
+        </member>
+        <member name="T:HandHeldProducts.Embedded.Decoding.DecodeAssembly.IqImageEventHandler">
+            <summary>
+            IQ Image Event Delegate which will pass the IqImageEventArgs.
+            </summary>
+            <param name="sender">Object source.</param>
+            <param name="e">IqImageEventArgs class.</param>
+        </member>
+        <member name="T:HandHeldProducts.Embedded.Decoding.DecodeAssembly.IqImageEventArgs">
+            <summary>
+            The IqImageEventArgs class defines the data that is being passed from the IqImage Event.
+            </summary>
+        </member>
+        <member name="P:HandHeldProducts.Embedded.Decoding.DecodeAssembly.IqImageEventArgs.IqImage">
+            <summary>
+            Returns the IQ Image Data.
+            </summary>
+        </member>
+        <member name="T:HandHeldProducts.Embedded.Decoding.DecodeAssembly.IqImageDescriptors">
+            <summary>
+            The IqImageDescriptors class defines the attributes of the IQ Image Descriptors.
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.DecodeAssembly.IqImageDescriptors.AspectRatio">
+            <summary>
+            IQ Image Aspect Ratio.
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.DecodeAssembly.IqImageDescriptors.OffsetX">
+            <summary>
+            IQ Image X Offset.
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.DecodeAssembly.IqImageDescriptors.OffsetY">
+            <summary>
+            IQ Image Y Offset
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.DecodeAssembly.IqImageDescriptors.Width">
+            <summary>
+            IQ Image Width.
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.DecodeAssembly.IqImageDescriptors.Height">
+            <summary>
+            IQ Image Height.
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.DecodeAssembly.IqImageDescriptors.Resolution">
+            <summary>
+            IQ Image Resolution.
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.DecodeAssembly.IqImageDescriptors.Format">
+            <summary>
+            IQ Image Format.
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.DecodeAssembly.IqImageDescriptors.Reserved">
+            <summary>
+            IQ Image Reserved space.
+            </summary>
+        </member>
+        <member name="M:HandHeldProducts.Embedded.Decoding.DecodeAssembly.IqImageDescriptors.#ctor">
+            <summary>
+            Default Constructor.
+            </summary>
+        </member>
+        <member name="M:HandHeldProducts.Embedded.Decoding.DecodeAssembly.IqImageDescriptors.#ctor(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Overloaded IqImageDescriptors Constructor.
+            </summary>
+            <param name="AspectRatio">Aspect Ratio Value.</param>
+            <param name="OffsetX">X Offset Value.</param>
+            <param name="OffsetY">Y Offset Value.</param>
+            <param name="Width">Width Value.</param>
+            <param name="Height">Height Value.</param>
+            <param name="Resolution">Resolution Value.</param>
+        </member>
+        <member name="M:HandHeldProducts.Embedded.Decoding.DecodeAssembly.IqImageDescriptors.#ctor(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,HandHeldProducts.Embedded.Decoding.DecodeAssembly.IqImageFormats)">
+            <summary>
+            Overloaded IqImageDescriptors Constructor.
+            </summary>
+            <param name="AspectRatio">Aspect Ratio Value.</param>
+            <param name="OffsetX">X Offset Value.</param>
+            <param name="OffsetY">Y Offset Value.</param>
+            <param name="Width">Width Value.</param>
+            <param name="Height">Height Value.</param>
+            <param name="Resolution">Resolution Value.</param>
+            <param name="ImageFormat">IQ Image Format Type.</param>
+        </member>
+        <member name="T:HandHeldProducts.Embedded.Hardware.Device">
+            <summary>
+            The Device class exposes the hardware of the device. 
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Hardware.Device.Imager">
+            <summary>
+            Public interface to the Imager class.
+            </summary>
+        </member>
+        <member name="M:HandHeldProducts.Embedded.Hardware.Device.VibratorOn(System.Boolean)">
+            <summary>
+            Enable or disable the vibrator.
+            </summary>
+            <param name="State">Specifies to vibrate or not</param>
+        </member>
+        <member name="M:HandHeldProducts.Embedded.Hardware.Device.AimerOn(System.Boolean)">
+            <summary>
+            Enable or disable the aimer.
+            </summary>
+            <param name="State">Specifies the desired aimer state to be set.</param>
+        </member>
+        <member name="M:HandHeldProducts.Embedded.Hardware.Device.IlluminationOn(System.Boolean)">
+            <summary>
+            Enable or disable illumination.
+            </summary>
+            <param name="State">Specifies the desired illumination state to be set.</param>
+        </member>
+        <member name="M:HandHeldProducts.Embedded.Hardware.Device.SetLED(HandHeldProducts.Embedded.Hardware.Device.LedColor,HandHeldProducts.Embedded.Hardware.Device.LedState)">
+            <summary>
+            Sets the state of the  LED.
+            </summary>
+            <param name="nColor">The LED color.
+            </param>
+            <param name="nState">
+            The state to be applied to the  LED.</param>
+            <param name="BlinkRateOnTime">
+            On time of the blink cycle, in microseconds. 
+            </param>
+            <param name="BlinkRateOffTime">
+            Off time of the blink cycle, in microseconds. 
+            </param>
+            <returns>
+            The status of the result. True = successful.
+            </returns>
+        </member>
+        <member name="T:HandHeldProducts.Embedded.Hardware.Device.LedState">
+            <summary>
+            State of the LED.
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Hardware.Device.LedState.Off">
+            <summary>
+            LED off state.
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Hardware.Device.LedState.On">
+            <summary>
+            LED on state.
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Hardware.Device.LedState.Blink">
+            <summary>
+            LED blink state.
+            </summary>
+        </member>
+        <member name="T:HandHeldProducts.Embedded.Hardware.Device.LedColor">
+            <summary>
+            Enumeration of the available colors of the LED.
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Hardware.Device.LedColor.Red">
+            <summary>
+            Right right LED.
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Hardware.Device.LedColor.Blue">
+            <summary>
+            Right green LED.
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Hardware.Device.LedColor.Green">
+            <summary>
+            Left red LED.
+            </summary>
+        </member>
+        <member name="T:HandHeldProducts.Embedded.Decoding.ExmDecodeSection">
+            <summary>
+            The section(s) of the Decode EXM file to be applied.
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.ExmDecodeSection.Both">
+            <summary>
+            Apply both the Property and Symbology sections.
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.ExmDecodeSection.Property">
+            <summary>
+            Apply the Property section.
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Decoding.ExmDecodeSection.Symbology">
+            <summary>
+            Apply the Symbology section.
+            </summary>
+        </member>
+        <member name="T:HandHeldProducts.Embedded.Hardware.Sound">
+            <summary>
+            The Sound class exposes the ability to invoke audible sounds on the device.  
+            </summary>
+        </member>
+        <member name="M:HandHeldProducts.Embedded.Hardware.Sound.Finalize">
+            <summary>
+            Finalizer
+            </summary>
+        </member>
+        <member name="M:HandHeldProducts.Embedded.Hardware.Sound.Play(HandHeldProducts.Embedded.Hardware.Sound.SoundTypes)">
+            <summary>
+            Plays a sound (automatic speaker or beeper detection).
+            </summary>
+            <param name="Type">Sound type to be played.</param>
+        </member>
+        <member name="M:HandHeldProducts.Embedded.Hardware.Sound.Play(System.String)">
+            <summary>
+            Plays a sound file from an external file.
+            </summary>
+            <param name="SoundFile">The path of the sound file.</param>
+        </member>
+        <member name="P:HandHeldProducts.Embedded.Hardware.Sound.BeepFailureDuration">
+            <summary>
+            Get/Set The Duration of the Failure Beep
+            </summary>
+        </member>
+        <member name="P:HandHeldProducts.Embedded.Hardware.Sound.BeepFailureFrequency">
+            <summary>
+            Get/Set The Frequency of the Failure Beep
+            </summary>
+        </member>
+        <member name="P:HandHeldProducts.Embedded.Hardware.Sound.BeepSuccessDuration">
+            <summary>
+            Get/Set The Duration of the Success Beep
+            </summary>
+        </member>
+        <member name="P:HandHeldProducts.Embedded.Hardware.Sound.BeepSuccessFrequency">
+            <summary>
+            Get/Set The Frequency of the Success Beep
+            </summary>
+        </member>
+        <member name="T:HandHeldProducts.Embedded.Hardware.Sound.SoundTypes">
+            <summary>
+            Embbeded sound bytes
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Hardware.Sound.SoundTypes.Failure">
+            <summary>
+            Sound associated with failure.
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Hardware.Sound.SoundTypes.Success">
+            <summary>
+            Sound associated with success.
+            </summary>
+        </member>
+        <member name="T:HandHeldProducts.Embedded.Hardware.Imager">
+            <summary>
+            The Imager class exposes the properties of the imager on the device.
+            </summary>
+        </member>
+        <member name="P:HandHeldProducts.Embedded.Hardware.Imager.BitsPerPixel">
+            <summary>
+            Returns the Bits Per Pixel resolution of the Imager.
+            </summary>
+        </member>
+        <member name="P:HandHeldProducts.Embedded.Hardware.Imager.Columns">
+            <summary>
+            Returns the Columns of the Imager.
+            </summary>
+        </member>
+        <member name="P:HandHeldProducts.Embedded.Hardware.Imager.EngineId">
+            <summary>
+            Returns the ID of the Scan Engine. 
+            </summary>
+        </member>
+        <member name="P:HandHeldProducts.Embedded.Hardware.Imager.EngineType">
+            <summary>
+            Returns the type of Scan engine. 
+            </summary>
+        </member>
+        <member name="P:HandHeldProducts.Embedded.Hardware.Imager.Rotation">
+            <summary>
+            Returns the rotation of the imager.
+            </summary>
+        </member>
+        <member name="P:HandHeldProducts.Embedded.Hardware.Imager.Rows">
+            <summary>
+            Returns the rows of the imager.
+            </summary>
+        </member>
+        <member name="T:HandHeldProducts.Embedded.Hardware.Imager.EngineIds">
+            <summary>
+            Device Engine IDs
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Hardware.Imager.EngineIds.Unknown">
+            <summary>
+            Engine is Unknown.
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Hardware.Imager.EngineIds.None">
+            <summary>
+            No engine available.
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Hardware.Imager.EngineIds.Imager4200">
+            <summary>
+            Honeywell 4200 Imager.
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Hardware.Imager.EngineIds.LaserSe1200">
+            <summary>
+            Symbol SE 1200 laser.
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Hardware.Imager.EngineIds.LaserSe1223">
+            <summary>
+            Symbol SE 1223 laser.
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Hardware.Imager.EngineIds.ImagerIt4000">
+            <summary>
+            Honeywell 4000 Imager.
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Hardware.Imager.EngineIds.ImagerIt4100">
+            <summary>
+            Honeywell 4100 Imager.
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Hardware.Imager.EngineIds.ImagerIt4300">
+            <summary>
+            Honeywell 4300 Imager.
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Hardware.Imager.EngineIds.ImagerIt5100">
+            <summary>
+            Honeywell 5100 Imager.
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Hardware.Imager.EngineIds.ImagerIt5300">
+            <summary>
+            Honeywell 5300 Imager.
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Hardware.Imager.EngineIds.ImagerIt5000Vga">
+            <summary>
+            Honeywell 5000 VGA Imager.
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Hardware.Imager.EngineIds.ImagerIt5000VgaPsoc">
+            <summary>
+            Honeywell 5000 VGA/PSOC Imager.
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Hardware.Imager.EngineIds.ImagerN5603">
+            <summary>
+            Honeywell 5603 Imager.
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Hardware.Imager.EngineIds.ImagerN5600">
+            <summary>
+            Honeywell 5600 Imager.
+            </summary>
+        </member>
+        <member name="T:HandHeldProducts.Embedded.Hardware.Imager.EngineTypes">
+            <summary>
+            Device Engine Types
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Hardware.Imager.EngineTypes.Unknown">
+            <summary>
+            Engine is unknown.
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Hardware.Imager.EngineTypes.None">
+            <summary>
+            No engine available.
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Hardware.Imager.EngineTypes.Imager">
+            <summary>
+            Engine is a imager.
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Hardware.Imager.EngineTypes.Laser">
+            <summary>
+            Engine is a laser.
+            </summary>
+        </member>
+        <member name="T:HandHeldProducts.Embedded.Hardware.Imager.ExposureModes">
+            <summary>
+            Exposure Modes.
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Hardware.Imager.ExposureModes.Fixed">
+            <summary>
+            Fixed Exposure.
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Hardware.Imager.ExposureModes.HHP">
+            <summary>
+            Honeywell Exposure.
+            </summary>
+        </member>
+        <member name="T:HandHeldProducts.Embedded.Hardware.Imager.ExposureSettings">
+            <summary>
+            Exposure Settings.
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Hardware.Imager.ExposureSettings.ExposureMethod">
+            <summary>
+            Exposure Method.
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Hardware.Imager.ExposureSettings.TargetValue">
+            <summary>
+            Target Value.
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Hardware.Imager.ExposureSettings.TargetPercentile">
+            <summary>
+            Target Percentile.
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Hardware.Imager.ExposureSettings.TargetAcceptGap">
+            <summary>
+            Target Accept Gap.
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Hardware.Imager.ExposureSettings.MaximumExposure">
+            <summary>
+            Maximum Exposure.
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Hardware.Imager.ExposureSettings.MaximumGain">
+            <summary>
+            Minimum Gain.
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Hardware.Imager.ExposureSettings.ConformImage">
+            <summary>
+            Conform Image.
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Hardware.Imager.ExposureSettings.ConformAttempts">
+            <summary>
+            Conform Attemps.
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Hardware.Imager.ExposureSettings.FixedExposure">
+            <summary>
+            Fixed Exposure.
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Hardware.Imager.ExposureSettings.FixedGain">
+            <summary>
+            Fixed Gain.
+            </summary>
+        </member>
+        <member name="F:HandHeldProducts.Embedded.Hardware.Imager.ExposureSettings.FixedFrameRate">
+            <summary>
+            Fixed Frame Rate.
+            </summary>
+        </member>
+    </members>
+</doc>

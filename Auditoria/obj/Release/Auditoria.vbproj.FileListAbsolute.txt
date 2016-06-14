@@ -1,0 +1,30 @@
+C:\Users\Rovijosa\Desktop\Win Mobile PgSQL\OneDrive\WinMPostgreSQL\Auditoria\Auditoria\bin\Release\DBInterna\dbAuditoria.sdf
+C:\Users\Rovijosa\Desktop\Win Mobile PgSQL\OneDrive\WinMPostgreSQL\Auditoria\Auditoria\bin\Release\Auditoria.exe
+C:\Users\Rovijosa\Desktop\Win Mobile PgSQL\OneDrive\WinMPostgreSQL\Auditoria\Auditoria\bin\Release\Auditoria.pdb
+C:\Users\Rovijosa\Desktop\Win Mobile PgSQL\OneDrive\WinMPostgreSQL\Auditoria\Auditoria\bin\Release\Auditoria.xml
+C:\Users\Rovijosa\Desktop\Win Mobile PgSQL\OneDrive\WinMPostgreSQL\Auditoria\Auditoria\bin\Release\HandHeldProducts.Embedded.Decoding.DecodeAssembly.dll
+C:\Users\Rovijosa\Desktop\Win Mobile PgSQL\OneDrive\WinMPostgreSQL\Auditoria\Auditoria\bin\Release\HandHeldProducts.Embedded.Decoding.DecodeAssembly.xml
+C:\Users\Rovijosa\Desktop\Win Mobile PgSQL\OneDrive\WinMPostgreSQL\Auditoria\Auditoria\obj\Release\ResolveAssemblyReference.cache
+C:\Users\Rovijosa\Desktop\Win Mobile PgSQL\OneDrive\WinMPostgreSQL\Auditoria\Auditoria\obj\Release\Auditoria.frmCapturarLote.resources
+C:\Users\Rovijosa\Desktop\Win Mobile PgSQL\OneDrive\WinMPostgreSQL\Auditoria\Auditoria\obj\Release\Auditoria.frmPrincipal.resources
+C:\Users\Rovijosa\Desktop\Win Mobile PgSQL\OneDrive\WinMPostgreSQL\Auditoria\Auditoria\obj\Release\Auditoria.Resources.resources
+C:\Users\Rovijosa\Desktop\Win Mobile PgSQL\OneDrive\WinMPostgreSQL\Auditoria\Auditoria\obj\Release\Auditoria.vbproj.GenerateResource.Cache
+C:\Users\Rovijosa\Desktop\Win Mobile PgSQL\OneDrive\WinMPostgreSQL\Auditoria\Auditoria\obj\Release\Auditoria.exe
+C:\Users\Rovijosa\Desktop\Win Mobile PgSQL\OneDrive\WinMPostgreSQL\Auditoria\Auditoria\obj\Release\Auditoria.xml
+C:\Users\Rovijosa\Desktop\Win Mobile PgSQL\OneDrive\WinMPostgreSQL\Auditoria\Auditoria\obj\Release\Auditoria.pdb
+C:\Users\User\Desktop\WinMobile\OneDrive\WinMPostgreSQL\Auditoria\Auditoria\bin\Release\DBInterna\dbAuditoria.sdf
+C:\Users\User\Desktop\WinMobile\OneDrive\WinMPostgreSQL\Auditoria\Auditoria\bin\Release\Auditoria.exe
+C:\Users\User\Desktop\WinMobile\OneDrive\WinMPostgreSQL\Auditoria\Auditoria\bin\Release\Auditoria.pdb
+C:\Users\User\Desktop\WinMobile\OneDrive\WinMPostgreSQL\Auditoria\Auditoria\bin\Release\Auditoria.xml
+C:\Users\User\Desktop\WinMobile\OneDrive\WinMPostgreSQL\Auditoria\Auditoria\bin\Release\HandHeldProducts.Embedded.Decoding.DecodeAssembly.dll
+C:\Users\User\Desktop\WinMobile\OneDrive\WinMPostgreSQL\Auditoria\Auditoria\bin\Release\HandHeldProducts.Embedded.Decoding.DecodeAssembly.xml
+C:\Users\User\Desktop\WinMobile\OneDrive\WinMPostgreSQL\Auditoria\Auditoria\obj\Release\ResolveAssemblyReference.cache
+C:\Users\User\Desktop\WinMobile\OneDrive\WinMPostgreSQL\Auditoria\Auditoria\obj\Release\Auditoria.frmCapturarLote.resources
+C:\Users\User\Desktop\WinMobile\OneDrive\WinMPostgreSQL\Auditoria\Auditoria\obj\Release\Auditoria.frmPrincipal.resources
+C:\Users\User\Desktop\WinMobile\OneDrive\WinMPostgreSQL\Auditoria\Auditoria\obj\Release\Auditoria.Resources.resources
+C:\Users\User\Desktop\WinMobile\OneDrive\WinMPostgreSQL\Auditoria\Auditoria\obj\Release\Auditoria.vbproj.GenerateResource.Cache
+C:\Users\User\Desktop\WinMobile\OneDrive\WinMPostgreSQL\Auditoria\Auditoria\obj\Release\Auditoria.exe
+C:\Users\User\Desktop\WinMobile\OneDrive\WinMPostgreSQL\Auditoria\Auditoria\obj\Release\Auditoria.xml
+C:\Users\User\Desktop\WinMobile\OneDrive\WinMPostgreSQL\Auditoria\Auditoria\obj\Release\Auditoria.pdb
+C:\Users\User\Desktop\WinMobile\OneDrive\WinMPostgreSQL\Auditoria\Auditoria\obj\Release\Auditoria.frmSesion.resources
+C:\Users\Rovijosa\Desktop\Win Mobile PgSQL\OneDrive\WinMPostgreSQL\Auditoria\Auditoria\obj\Release\Auditoria.frmSesion.resources

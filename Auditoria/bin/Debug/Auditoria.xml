@@ -1,0 +1,76 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Auditoria
+</name>
+</assembly>
+<members>
+<member name="P:Auditoria.My.Resources.Resources.ResourceManager">
+	<summary>
+   Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:Auditoria.My.Resources.Resources.Culture">
+	<summary>
+   Overrides the current thread's CurrentUICulture property for all
+   resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:Auditoria.My.Resources.Resources">
+	<summary>
+   A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="T:Auditoria.dbAuditoriaDataSet.proArticuloAuditoriaLoteDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Auditoria.dbAuditoriaDataSet.proArticulosAuditoriaDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Auditoria.dbAuditoriaDataSet.proArticuloEmpaqueDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Auditoria.dbAuditoriaDataSet.proArticuloAuditoriaLoteRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Auditoria.dbAuditoriaDataSet.proArticulosAuditoriaRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Auditoria.dbAuditoriaDataSet.proArticuloEmpaqueRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Auditoria.dbAuditoriaDataSet.proArticuloAuditoriaLoteRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Auditoria.dbAuditoriaDataSet.proArticulosAuditoriaRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Auditoria.dbAuditoriaDataSet.proArticuloEmpaqueRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Auditoria.dbAuditoriaDataSet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:Auditoria.dbAuditoriaDataSetTableAdapters.proArticuloAuditoriaLoteTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Auditoria.dbAuditoriaDataSetTableAdapters.proArticulosAuditoriaTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Auditoria.dbAuditoriaDataSetTableAdapters.proArticuloEmpaqueTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+</members>
+</doc>

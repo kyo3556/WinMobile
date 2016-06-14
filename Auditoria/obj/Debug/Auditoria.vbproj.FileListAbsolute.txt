@@ -1,0 +1,43 @@
+C:\Users\User\Documents\Visual Studio 2008\Projects\Auditoria\Auditoria\bin\Debug\Auditoria.exe
+C:\Users\User\Documents\Visual Studio 2008\Projects\Auditoria\Auditoria\bin\Debug\Auditoria.pdb
+C:\Users\User\Documents\Visual Studio 2008\Projects\Auditoria\Auditoria\bin\Debug\Auditoria.xml
+C:\Users\User\Documents\Visual Studio 2008\Projects\Auditoria\Auditoria\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\User\Documents\Visual Studio 2008\Projects\Auditoria\Auditoria\obj\Debug\Auditoria.frmPrincipal.resources
+C:\Users\User\Documents\Visual Studio 2008\Projects\Auditoria\Auditoria\obj\Debug\Auditoria.Resources.resources
+C:\Users\User\Documents\Visual Studio 2008\Projects\Auditoria\Auditoria\obj\Debug\Auditoria.vbproj.GenerateResource.Cache
+C:\Users\User\Documents\Visual Studio 2008\Projects\Auditoria\Auditoria\obj\Debug\Auditoria.exe
+C:\Users\User\Documents\Visual Studio 2008\Projects\Auditoria\Auditoria\obj\Debug\Auditoria.xml
+C:\Users\User\Documents\Visual Studio 2008\Projects\Auditoria\Auditoria\obj\Debug\Auditoria.pdb
+C:\Users\User\Documents\Visual Studio 2008\Projects\Auditoria\Auditoria\bin\Debug\HandHeldProducts.Embedded.Decoding.DecodeAssembly.dll
+C:\Users\User\Documents\Visual Studio 2008\Projects\Auditoria\Auditoria\bin\Debug\HandHeldProducts.Embedded.Decoding.DecodeAssembly.xml
+C:\Users\User\Documents\Visual Studio 2008\Projects\Auditoria\Auditoria\obj\Debug\Auditoria.frmCapturarLote.resources
+C:\Users\User\Documents\Visual Studio 2008\Projects\Auditoria\Auditoria\bin\Debug\DBInterna\dbAuditoria.sdf
+C:\Users\Rovijosa\Desktop\Win Mobile PgSQL\OneDrive\WinMPostgreSQL\Auditoria\Auditoria\bin\Debug\DBInterna\dbAuditoria.sdf
+C:\Users\Rovijosa\Desktop\Win Mobile PgSQL\OneDrive\WinMPostgreSQL\Auditoria\Auditoria\bin\Debug\Auditoria.exe
+C:\Users\Rovijosa\Desktop\Win Mobile PgSQL\OneDrive\WinMPostgreSQL\Auditoria\Auditoria\bin\Debug\Auditoria.pdb
+C:\Users\Rovijosa\Desktop\Win Mobile PgSQL\OneDrive\WinMPostgreSQL\Auditoria\Auditoria\bin\Debug\Auditoria.xml
+C:\Users\Rovijosa\Desktop\Win Mobile PgSQL\OneDrive\WinMPostgreSQL\Auditoria\Auditoria\bin\Debug\HandHeldProducts.Embedded.Decoding.DecodeAssembly.dll
+C:\Users\Rovijosa\Desktop\Win Mobile PgSQL\OneDrive\WinMPostgreSQL\Auditoria\Auditoria\bin\Debug\HandHeldProducts.Embedded.Decoding.DecodeAssembly.xml
+C:\Users\Rovijosa\Desktop\Win Mobile PgSQL\OneDrive\WinMPostgreSQL\Auditoria\Auditoria\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Rovijosa\Desktop\Win Mobile PgSQL\OneDrive\WinMPostgreSQL\Auditoria\Auditoria\obj\Debug\Auditoria.frmCapturarLote.resources
+C:\Users\Rovijosa\Desktop\Win Mobile PgSQL\OneDrive\WinMPostgreSQL\Auditoria\Auditoria\obj\Debug\Auditoria.frmPrincipal.resources
+C:\Users\Rovijosa\Desktop\Win Mobile PgSQL\OneDrive\WinMPostgreSQL\Auditoria\Auditoria\obj\Debug\Auditoria.Resources.resources
+C:\Users\Rovijosa\Desktop\Win Mobile PgSQL\OneDrive\WinMPostgreSQL\Auditoria\Auditoria\obj\Debug\Auditoria.vbproj.GenerateResource.Cache
+C:\Users\Rovijosa\Desktop\Win Mobile PgSQL\OneDrive\WinMPostgreSQL\Auditoria\Auditoria\obj\Debug\Auditoria.exe
+C:\Users\Rovijosa\Desktop\Win Mobile PgSQL\OneDrive\WinMPostgreSQL\Auditoria\Auditoria\obj\Debug\Auditoria.xml
+C:\Users\Rovijosa\Desktop\Win Mobile PgSQL\OneDrive\WinMPostgreSQL\Auditoria\Auditoria\obj\Debug\Auditoria.pdb
+C:\Users\User\Desktop\WinMobile\OneDrive\WinMPostgreSQL\Auditoria\Auditoria\bin\Debug\DBInterna\dbAuditoria.sdf
+C:\Users\User\Desktop\WinMobile\OneDrive\WinMPostgreSQL\Auditoria\Auditoria\bin\Debug\Auditoria.exe
+C:\Users\User\Desktop\WinMobile\OneDrive\WinMPostgreSQL\Auditoria\Auditoria\bin\Debug\Auditoria.pdb
+C:\Users\User\Desktop\WinMobile\OneDrive\WinMPostgreSQL\Auditoria\Auditoria\bin\Debug\Auditoria.xml
+C:\Users\User\Desktop\WinMobile\OneDrive\WinMPostgreSQL\Auditoria\Auditoria\bin\Debug\HandHeldProducts.Embedded.Decoding.DecodeAssembly.dll
+C:\Users\User\Desktop\WinMobile\OneDrive\WinMPostgreSQL\Auditoria\Auditoria\bin\Debug\HandHeldProducts.Embedded.Decoding.DecodeAssembly.xml
+C:\Users\User\Desktop\WinMobile\OneDrive\WinMPostgreSQL\Auditoria\Auditoria\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\User\Desktop\WinMobile\OneDrive\WinMPostgreSQL\Auditoria\Auditoria\obj\Debug\Auditoria.frmCapturarLote.resources
+C:\Users\User\Desktop\WinMobile\OneDrive\WinMPostgreSQL\Auditoria\Auditoria\obj\Debug\Auditoria.frmPrincipal.resources
+C:\Users\User\Desktop\WinMobile\OneDrive\WinMPostgreSQL\Auditoria\Auditoria\obj\Debug\Auditoria.Resources.resources
+C:\Users\User\Desktop\WinMobile\OneDrive\WinMPostgreSQL\Auditoria\Auditoria\obj\Debug\Auditoria.vbproj.GenerateResource.Cache
+C:\Users\User\Desktop\WinMobile\OneDrive\WinMPostgreSQL\Auditoria\Auditoria\obj\Debug\Auditoria.exe
+C:\Users\User\Desktop\WinMobile\OneDrive\WinMPostgreSQL\Auditoria\Auditoria\obj\Debug\Auditoria.xml
+C:\Users\User\Desktop\WinMobile\OneDrive\WinMPostgreSQL\Auditoria\Auditoria\obj\Debug\Auditoria.pdb
+C:\Users\User\Desktop\WinMobile\OneDrive\WinMPostgreSQL\Auditoria\Auditoria\obj\Debug\Auditoria.frmSesion.resources
